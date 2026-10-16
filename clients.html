@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clients | ELEXTRAMA</title>
+<meta name="description" content="Les entreprises et partenaires qui nous ont fait confiance.">
+<meta property="og:title" content="Clients | ELEXTRAMA">
+<meta property="og:description" content="Les entreprises et partenaires qui nous ont fait confiance.">
+<meta property="og:type" content="website">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HEADER: nafs header f kola page. L lien actif kaytlwn b JS (main.js) -->
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="index.html"><img src="images/logo.png" alt="">ELEXTRAMA</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">&#9776;</button>
+    <nav id="nav">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="realisations.html">Réalisations</a>
+      <a href="solaire.html">Solaire</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="clients.html">Clients</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a class="tel" href="tel:+212669540721">Appeler</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<!-- ========== CLIENTS ==========
+ Bach tzid client: click "Modifier la liste" f lakhir dyal page (chouf js/clients.js) -->
+<section id="clients" style="background:#fff">
+  <div class="wrap">
+    <h1 class="pt">Ils nous ont fait confiance</h1>
+    <p class="lead">Entreprises et partenaires avec qui nous avons travaillé.</p>
+    <!-- Kola client kaytzad men js/clients.js, ma khassk tkteb walo hna -->
+    <div class="clients" id="clientsGrid"></div>
+
+    <!-- OUTILS DYAL MODIFICATION: mkhbbyin 7ta tcliki "Modifier la liste" w tkteb l code -->
+    <div id="adminTools" hidden>
+      <form id="addForm" hidden>
+        <div><label for="cName">Nom du client</label><input id="cName" required></div>
+        <div><label for="cLogo">Logo (PNG, JPG ou SVG, facultatif)</label><input id="cLogo" type="file" accept="image/*"></div>
+        <div style="display:flex;gap:10px"><button class="btn btn-main" type="submit">Ajouter</button><button class="btn" type="button" id="cancel" style="border-color:#c5d0da">Annuler</button></div>
+      </form>
+      <div class="admin-bar">
+        <button class="btn btn-main" id="download" type="button">Télécharger clients-data.js</button>
+        <button class="btn" id="reset" type="button" style="border-color:#c5d0da">Revenir à la liste du fichier</button>
+        <button class="btn" id="quit" type="button" style="border-color:#c5d0da">Quitter la modification</button>
+      </div>
+      <p id="msg" role="status"></p>
+      <div class="note"><b>Important :</b> les changements sont visibles seulement dans votre navigateur. Pour qu'ils apparaissent pour tout le monde : cliquez sur <i>Télécharger</i>, remplacez le fichier <code>js/clients-data.js</code> du site par celui téléchargé, puis republiez le site.</div>
+    </div>
+    <p class="adm-link"><a href="#" id="unlock">Modifier la liste</a></p>
+  </div>
+</section>
+
+</main>
+
+<footer>© <span id="year"></span> ELEXTRAMA SARL. N° 5, 2ème étage, Bd Mehdi Ben Barka, Bourgogne, Casablanca. Tél : 0669-540721</footer>
+
+<a class="wa" href="https://wa.me/212669540721" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+
+<!-- JS: main.js dima lowl (fih les outils li kaystaamlohom les autres), men be3d js dyal page -->
+<script src="js/main.js" defer></script>
+<script src="js/clients-data.js" defer></script>
+<script src="js/clients.js" defer></script>
+</body>
+</html>

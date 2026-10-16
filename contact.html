@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact et devis | ELEXTRAMA</title>
+<meta name="description" content="Demandez un devis à ELEXTRAMA : téléphone, WhatsApp, email et formulaire.">
+<meta property="og:title" content="Contact et devis | ELEXTRAMA">
+<meta property="og:description" content="Demandez un devis à ELEXTRAMA : téléphone, WhatsApp, email et formulaire.">
+<meta property="og:type" content="website">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HEADER: nafs header f kola page. L lien actif kaytlwn b JS (main.js) -->
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="index.html"><img src="images/logo.png" alt="">ELEXTRAMA</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">&#9776;</button>
+    <nav id="nav">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="realisations.html">Réalisations</a>
+      <a href="solaire.html">Solaire</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="clients.html">Clients</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a class="tel" href="tel:+212669540721">Appeler</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<!-- ========== CONTACT ========== -->
+<section id="contact">
+  <div class="wrap">
+    <h1 class="pt">Parlons de votre projet</h1>
+    <p class="lead">Décrivez votre besoin, nous vous répondons avec un devis.</p>
+    <div class="contact-grid">
+      <div class="info">
+        <p><strong>El Ghali SARDI</strong><br>Directeur administratif</p>
+        <p>Tél / WhatsApp : <a href="tel:+212669540721">0669-540721</a></p>
+        <p>Email : <a href="mailto:elextrama.ma@gmail.com">elextrama.ma@gmail.com</a></p>
+        <p>Adresse : N° 5, 2ème étage, Bd Mehdi Ben Barka, Bourgogne, Casablanca</p>
+        <!-- TODO: bddl had lien b lien Google Maps dyal l charika -->
+        <p><a href="https://www.google.com/maps/search/?api=1&query=Bd+Mehdi+Ben+Barka+Bourgogne+Casablanca" target="_blank" rel="noopener">Voir sur Google Maps</a></p>
+      </div>
+
+      <!-- Formulaire: JS kay7awlo l message WhatsApp (bla backend) -->
+      <form id="quote">
+        <div><label for="name">Nom</label><input id="name" required></div>
+        <div><label for="service">Service</label>
+          <select id="service">
+            <option>Installation électrique CFO / CFA</option>
+            <option>Électricité industrielle</option>
+            <option>Étude d'éclairage</option>
+            <option>Installation solaire</option>
+            <option>Détection incendie</option>
+          </select></div>
+        <div><label for="extra" id="extraL"></label><input id="extra"></div>
+        <div><label for="msg">Votre besoin</label><textarea id="msg" required></textarea></div>
+        <button class="btn btn-main" type="submit">Envoyer par WhatsApp</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+<footer>© <span id="year"></span> ELEXTRAMA SARL. N° 5, 2ème étage, Bd Mehdi Ben Barka, Bourgogne, Casablanca. Tél : 0669-540721</footer>
+
+<a class="wa" href="https://wa.me/212669540721" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+
+<!-- JS: main.js dima lowl (fih les outils li kaystaamlohom les autres), men be3d js dyal page -->
+<script src="js/main.js" defer></script>
+<script src="js/data.js" defer></script>
+<script src="js/contact.js" defer></script>
+</body>
+</html>
